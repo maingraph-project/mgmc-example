@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "mgmc-example",
+  "version": "${version}",
+  "name": "mgmc-example",
+  "description": "mgmc-example",
+  "authors": [
+    "aixiaoji"
+  ],
+  "contact": {
+    "homepage": "aixiaoji.nb6.ltd"
+  },
+  "license": "MIT",
+  "icon": "assets/mgmc-example/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ltd.nb6.mgmcExample.fabric.MgmcExampleFabric"
+    ],
+    "client": [
+      "ltd.nb6.mgmcExample.fabric.client.MgmcExampleFabricClient"
+    ]
+  },
+  "mixins": [
+    "mgmc-example.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
