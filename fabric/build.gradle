@@ -31,6 +31,9 @@ dependencies {
 
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
+    // 依赖主模组的 fabric 模块
+    modImplementation name: 'mgmc-fabric-0.4.0'
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }

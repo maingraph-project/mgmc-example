@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "mgmc-example",
+  "id": "mgmc_example",
   "version": "${version}",
-  "name": "mgmc-example",
-  "description": "mgmc-example",
+  "name": "mgmc_example",
+  "description": "mgmc_example",
   "authors": [
     "aixiaoji"
   ],
@@ -11,7 +11,7 @@
     "homepage": "aixiaoji.nb6.ltd"
   },
   "license": "MIT",
-  "icon": "assets/mgmc-example/icon.png",
+  "icon": "assets/mgmc_example/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-    "mgmc-example.mixins.json"
+    "mgmc_example.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.18.4",

@@ -1,0 +1,13 @@
+{
+  "node.mgmc_example.say_hello.name": "发送示例消息",
+  "node_category.mgmc_example.action": "示例附属: 动作",
+  "node.mgmc_example.average.name": "计算平均值",
+  "node_category.mgmc_example.math": "示例附属: 数学",
+  "node.mgmc_example.port.val1": "数值 1",
+  "node_category.mgmc_example.math.port.val1": "数值 1",
+  "node.mgmc_example.port.val2": "数值 2",
+  "node_category.mgmc_example.math.port.val2": "数值 2",
+  "node.mgmc_example.on_example_trigger.name": "当示例事件触发",
+  "node_category.mgmc_example.event": "示例附属: 事件",
+  "node.mgmc_example.port.data": "事件数据"
+}

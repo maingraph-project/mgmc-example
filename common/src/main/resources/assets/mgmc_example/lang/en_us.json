@@ -1,0 +1,11 @@
+{
+  "node.mgmc_example.say_hello.name": "Send Example Message",
+  "node_category.mgmc_example.action": "Example Addon: Action",
+  "node.mgmc_example.average.name": "Calculate Average",
+  "node_category.mgmc_example.math": "Example Addon: Math",
+  "node.mgmc_example.port.val1": "Value 1",
+  "node.mgmc_example.port.val2": "Value 2",
+  "node.mgmc_example.on_example_trigger.name": "On Example Event",
+  "node_category.mgmc_example.event": "Example Addon: Event",
+  "node.mgmc_example.port.data": "Event Data"
+}

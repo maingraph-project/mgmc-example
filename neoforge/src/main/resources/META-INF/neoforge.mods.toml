@@ -4,30 +4,30 @@ loaderVersion = "[2,)"
 license = "MIT"
 
 [[mods]]
-modId = "mgmc-example"
+modId = "mgmc_example"
 version = "${version}"
-displayName = "mgmc-example"
+displayName = "mgmc_example"
 authors = "aixiaoji"
 description = '''
-mgmc-example
+mgmc_example
 '''
 #logoFile = ""
 
-[[dependencies.mgmc-example]]
+[[dependencies.mgmc_example]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.mgmc-example]]
+[[dependencies.mgmc_example]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.mgmc-example]]
+[[dependencies.mgmc_example]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.8,)"
@@ -35,4 +35,4 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
-config = "mgmc-example.mixins.json"
+config = "mgmc_example.mixins.json"
