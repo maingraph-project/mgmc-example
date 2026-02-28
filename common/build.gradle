@@ -11,5 +11,5 @@ dependencies {
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
 
     // 依赖主模组的 common 模块
-    modImplementation name: 'mgmc-common-0.4.0'
+    modImplementation name: 'mgmc'
 }

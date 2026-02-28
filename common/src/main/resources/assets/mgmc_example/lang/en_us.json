@@ -5,6 +5,9 @@
   "node_category.mgmc_example.math": "Example Addon: Math",
   "node.mgmc_example.port.val1": "Value 1",
   "node.mgmc_example.port.val2": "Value 2",
+  "node.mgmc_example.custom_type_passthrough.name": "Custom Type Passthrough",
+  "node_category.mgmc_example.custom": "Example Addon: Custom Type",
+  "node.mgmc_example.port.custom_value": "Custom Value",
   "node.mgmc_example.on_example_trigger.name": "On Example Event",
   "node_category.mgmc_example.event": "Example Addon: Event",
   "node.mgmc_example.port.data": "Event Data"

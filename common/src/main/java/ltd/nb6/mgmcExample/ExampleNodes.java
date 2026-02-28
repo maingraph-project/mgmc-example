@@ -4,6 +4,7 @@ import ltd.opens.mg.mc.core.blueprint.NodeDefinition.PortType;
 import ltd.opens.mg.mc.core.blueprint.NodeHelper;
 import ltd.opens.mg.mc.core.blueprint.NodePorts;
 import ltd.opens.mg.mc.core.blueprint.NodeThemes;
+import ltd.opens.mg.mc.core.blueprint.CustomTypeRegistry;
 import ltd.opens.mg.mc.core.blueprint.engine.NodeLogicRegistry;
 import ltd.opens.mg.mc.core.blueprint.engine.TypeConverter;
 import ltd.opens.mg.mc.core.blueprint.events.MGMCEventContext;
@@ -24,6 +25,8 @@ public class ExampleNodes {
     public static final MGMCEventType EXAMPLE_EVENT = new MGMCEventType("mgmc_example:custom_trigger");
 
     public static void register() {
+        String exampleTypeId = CustomTypeRegistry.registerAddonType(MgmcExample.MOD_ID, "example_data");
+
         // 1. 自定义动作节点：发送带前缀的消息
         // 该节点接收一个字符串输入，并将其发送给当前触发蓝图的玩家
         NodeHelper.setup("example_say_hello", "node.mgmc_example.say_hello.name")
@@ -62,6 +65,14 @@ public class ExampleNodes {
                 // 返回计算结果，蓝图引擎会自动将其提供给输出端口
                 return (v1 + v2) / 2.0;
             });
+
+        // 3. 自定义类型示例节点：透传自定义类型数据
+        NodeHelper.setup("example_custom_type_passthrough", "node.mgmc_example.custom_type_passthrough.name")
+            .category("node_category.mgmc_example.custom")
+            .color(0x9b59b6) // 紫色，用于自定义类型示例
+            .customInput("value", "node.mgmc_example.port.custom_value", exampleTypeId, 0xFFAAAAAA, "")
+            .customOutput("value", "node.mgmc_example.port.custom_value", exampleTypeId, 0xFFAAAAAA)
+            .registerValue((node, portId, ctx) -> NodeLogicRegistry.evaluateInput(node, "value", ctx));
 
         // 3. 自定义事件节点：当自定义事件触发时执行
         // 该节点作为蓝图的起点，当 EXAMPLE_EVENT 被触发时开始运行

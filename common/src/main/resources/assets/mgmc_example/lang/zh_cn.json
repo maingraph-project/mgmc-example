@@ -7,6 +7,9 @@
   "node_category.mgmc_example.math.port.val1": "数值 1",
   "node.mgmc_example.port.val2": "数值 2",
   "node_category.mgmc_example.math.port.val2": "数值 2",
+  "node.mgmc_example.custom_type_passthrough.name": "自定义类型透传",
+  "node_category.mgmc_example.custom": "示例附属: 自定义类型",
+  "node.mgmc_example.port.custom_value": "自定义值",
   "node.mgmc_example.on_example_trigger.name": "当示例事件触发",
   "node_category.mgmc_example.event": "示例附属: 事件",
   "node.mgmc_example.port.data": "事件数据"
